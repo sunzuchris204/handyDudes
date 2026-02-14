@@ -33,7 +33,7 @@ export function Sidebar() {
                   className={cn(
                     "block rounded-md px-3 py-2 text-sm font-semibold transition-all",
                     isActive
-                      ? "bg-[#ef4444] text-white shadow-lg"
+                      ? "bg-[hsl(var(--accent-purple))] text-white shadow-lg"
                       : "text-muted-foreground hover:bg-card hover:text-foreground"
                   )}
                 >
