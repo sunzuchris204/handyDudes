@@ -6,13 +6,13 @@ import { cn } from "@/lib/utils";
 
 const navigationItems = [
   { href: "/", label: "Overview" },
+  { href: "/system-flows", label: "System Flows" },
   { href: "/lead-capture", label: "Lead Capture" },
   { href: "/sales-dispatch", label: "Sales & Dispatch Dashboard" },
   { href: "/jobber-integration", label: "Jobber Integration" },
   { href: "/technician-workflow", label: "Technician Workflow" },
   { href: "/automations-messaging", label: "Automations & Messaging" },
   { href: "/manager-dashboard", label: "Manager Dashboard" },
-  { href: "/system-flows", label: "System Flows" },
   { href: "/integrations", label: "Integrations" },
   { href: "/key-decisions", label: "Key Decisions" },
 ];
