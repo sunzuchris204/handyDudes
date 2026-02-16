@@ -23,7 +23,7 @@ export function StepFlow({ steps, title }: StepFlowProps) {
         {steps.map((step, index) => (
           <div key={index} className="relative flex flex-col items-center">
             {/* Step Label */}
-            <div className="mb-4 whitespace-nowrap rounded-full bg-[#ef4444] px-4 py-1.5 text-xs font-bold text-white">
+            <div className="mb-4 whitespace-nowrap rounded-full bg-[hsl(var(--accent-purple))] px-4 py-1.5 text-xs font-bold text-white">
               STEP {index + 1} - {step.title}
             </div>
             

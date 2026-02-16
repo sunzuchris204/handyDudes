@@ -35,13 +35,13 @@ graph TB
     style C fill:#f97316,stroke:#ea580c,stroke-width:2px,color:#fff
     style D fill:#3b82f6,stroke:#1e40af,stroke-width:2px,color:#fff
     style E fill:#22c55e,stroke:#16a34a,stroke-width:2px,color:#fff
-    style F fill:#ef4444,stroke:#dc2626,stroke-width:2px,color:#fff
     style G fill:#eab308,stroke:#ca8a04,stroke-width:2px,color:#fff
     style H fill:#22c55e,stroke:#16a34a,stroke-width:2px,color:#fff
     style I fill:#f97316,stroke:#ea580c,stroke-width:2px,color:#fff
     style J fill:#3b82f6,stroke:#1e40af,stroke-width:2px,color:#fff
     style K fill:#22c55e,stroke:#16a34a,stroke-width:2px,color:#fff
-    style L fill:#ef4444,stroke:#dc2626,stroke-width:2px,color:#fff
+    style F fill:#a855f7,stroke:#7c3aed,stroke-width:2px,color:#fff
+    style L fill:#a855f7,stroke:#7c3aed,stroke-width:2px,color:#fff
         `}
       />
 

@@ -46,7 +46,7 @@ export default function SystemFlowsPage() {
                   <div className="space-y-1 text-xs">
                     <div>✓ Lead qualified</div>
                     <div>📝 Details collected</div>
-                    <button className="mt-2 w-full rounded-lg bg-[#ef4444] px-2 py-1 text-xs font-bold text-white">
+                    <button className="mt-2 w-full rounded-lg bg-[hsl(var(--accent-purple))] px-2 py-1 text-xs font-bold text-white">
                       SEND TO JOBBER
                     </button>
                   </div>

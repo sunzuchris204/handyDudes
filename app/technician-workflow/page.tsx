@@ -17,7 +17,7 @@ export default function TechnicianWorkflowPage() {
       {/* Step 1: Job Assigned */}
       <div className="rounded-lg border border-border bg-card p-8">
         <div className="mb-6 text-center">
-          <div className="mb-2 inline-block rounded-full bg-[#ef4444] px-4 py-1.5 text-xs font-bold text-white">
+          <div className="mb-2 inline-block rounded-full bg-[hsl(var(--accent-purple))] px-4 py-1.5 text-xs font-bold text-white">
             TECHNICIAN JOB LIFECYCLE
           </div>
           <p className="mt-4 text-sm text-muted-foreground">

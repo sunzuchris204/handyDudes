@@ -44,7 +44,7 @@ export default function SalesDispatchPage() {
               <div className="space-y-2">
                 <div className="rounded-lg bg-orange-500/20 p-3">
                   <div className="mb-2 text-xs font-bold">Send to Jobber</div>
-                  <button className="w-full rounded-lg bg-[#ef4444] px-3 py-2 text-xs font-bold text-white">
+                  <button className="w-full rounded-lg bg-[hsl(var(--accent-purple))] px-3 py-2 text-xs font-bold text-white">
                     SEND TO JOBBER
                   </button>
                   <div className="mt-2 space-y-1 text-xs">
