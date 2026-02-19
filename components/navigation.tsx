@@ -21,10 +21,10 @@ export function Navigation({ onMenuClick }: NavigationProps) {
 
         <div className="min-w-0 flex-1">
           <h1 className="truncate text-base font-bold text-foreground sm:text-lg">
-            Handy Dudes Lead-to-Job Automation Platform
+            Proposal for Handy Dudes
           </h1>
           <div className="hidden text-xs font-medium text-muted-foreground sm:block">
-            Architecture Documentation
+            Proposal Documentation
           </div>
         </div>
 

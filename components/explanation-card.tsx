@@ -21,6 +21,7 @@ interface ExplanationCardProps {
   warning?: boolean;
   checkmark?: boolean;
   cross?: boolean;
+  className?: string;
 }
 
 const iconMap: Record<string, LucideIcon> = {
@@ -45,6 +46,7 @@ export function ExplanationCard({
   warning = false,
   checkmark = false,
   cross = false,
+  className = "",
 }: ExplanationCardProps) {
   const IconComponent = icon || iconMap.default;
   const accentColor = accent;
@@ -70,7 +72,7 @@ export function ExplanationCard({
 
   return (
     <div
-      className={`rounded-lg border border-border bg-card p-6 shadow-lg ${borderColorMap[accentColor]}`}
+      className={`rounded-lg border border-border bg-card p-6 shadow-lg ${borderColorMap[accentColor]} ${className}`}
     >
       <div className="mb-4 flex items-center gap-3">
         <div className={`${iconColorMap[accentColor]}`}>

@@ -205,13 +205,16 @@ export default function SalesDashboardPage() {
       <div className="grid gap-6 md:grid-cols-2">
         <ExplanationCard
           title="GoHighLevel (GHL)"
-          description="Central place where all leads are tracked until ready for quoting."
+          description="Central place where all leads are tracked, worked, and communicated with until ready for quoting."
           accent="purple"
           icon={Zap}
           responsibilities={[
             "All sources (chat, Thumbtack, phone) flow into one pipeline",
             "Sales collects notes/photos and moves the opportunity through stages",
             "Sales selects the best quote option inside GHL",
+            "Appointment reminders via SMS/email",
+            "Follow-up sequences based on pipeline stage",
+            "Post-job satisfaction survey automatically sent",
           ]}
         />
 
@@ -244,3 +247,4 @@ export default function SalesDashboardPage() {
     </div>
   );
 }
+

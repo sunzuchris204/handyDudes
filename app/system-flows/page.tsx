@@ -1,8 +1,76 @@
 import { StepFlow } from "@/components/step-flow";
 import { ExplanationCard } from "@/components/explanation-card";
 import { ArrowRight, FileText, Briefcase } from "lucide-react";
+import { SystemFlowDiagram } from "@/components/system-flow-diagram";
 
 export default function SystemFlowsPage() {
+  const workflows = [
+    {
+      title: "1. LEAD TO QUOTE",
+      steps: [
+        {
+          entity: "lead",
+          step: 1,
+          title: "Customer contacts",
+          description: "Chat, Thumbtack, or phone.",
+        },
+        {
+          entity: "ghl",
+          step: 2,
+          title: "GHL captures & qualifies",
+          description: "Sales collects details in pipeline.",
+        },
+        {
+          entity: "node",
+          step: 3,
+          title: "AI generates quotes",
+          description: "Multiple options from notes.",
+        },
+        {
+          entity: "ghl",
+          step: 4,
+          title: "Sales sends to Jobber",
+          description: "Selected quote becomes request.",
+        },
+        {
+          entity: "jobber",
+          step: 5,
+          title: "Client approves",
+          description: "Quote sent via email/SMS.",
+        },
+      ],
+    },
+    {
+      title: "2. JOB TO COMPLETION",
+      steps: [
+        {
+          entity: "jobber",
+          step: 1,
+          title: "Job scheduled",
+          description: "Technician assigned.",
+        },
+        {
+          entity: "technician",
+          step: 2,
+          title: "Work completed",
+          description: "Status updated in Jobber.",
+        },
+        {
+          entity: "jobber",
+          step: 3,
+          title: "Invoice sent",
+          description: "Payment processed.",
+        },
+        {
+          entity: "ghl",
+          step: 4,
+          title: "Survey & sync",
+          description: "Status syncs. Survey sent.",
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="space-y-8">
       <div>
@@ -14,7 +82,7 @@ export default function SystemFlowsPage() {
         </p>
       </div>
 
-      <StepFlow
+      {/* <StepFlow
         title="Complete Lead-to-Job Flow"
         steps={[
           {
@@ -98,7 +166,17 @@ export default function SystemFlowsPage() {
             ),
           },
         ]}
-      />
+      /> */}
+
+      <div className="rounded-lg border border-border bg-card/60 p-6 shadow-2xl backdrop-blur-xl supports-[backdrop-filter]:bg-card/50">
+        <div className="mb-4">
+          <h2 className="mb-2 text-2xl font-bold text-foreground">System Flow Diagrams</h2>
+          <p className="text-sm text-muted-foreground">
+            How data moves between lead sources, GHL, Node Quote Engine, and Jobber for each core workflow.
+          </p>
+        </div>
+        <SystemFlowDiagram workflows={workflows} />
+      </div>
 
       <div className="grid gap-6 md:grid-cols-2">
         <ExplanationCard

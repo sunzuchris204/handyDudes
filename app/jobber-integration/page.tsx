@@ -1,4 +1,3 @@
-import { MermaidDiagram } from "@/components/mermaid-diagram";
 import { ExplanationCard } from "@/components/explanation-card";
 import { FileText, Calendar, RefreshCw, DollarSign, AlertCircle } from "lucide-react";
 
@@ -14,62 +13,40 @@ export default function JobberIntegrationPage() {
         </p>
       </div>
 
-      <MermaidDiagram
-        title="Jobber Integration Flow"
-        chart={`
-graph LR
-    A[GoHighLevel] -->|Quote Data| B[Integration Layer]
-    B -->|Creates| C[Jobber Quote]
-    C -->|Approved| D[Jobber Job]
-    D -->|Scheduled| E[Technician Assignment]
-    E -->|Updates| D
-    D -->|Completed| F[Jobber Invoice]
-    F -->|Syncs Back| B
-    B -->|Updates| A[GoHighLevel]
-    
-    style A fill:#a855f7,stroke:#7c3aed,stroke-width:2px,color:#fff
-    style B fill:#3b82f6,stroke:#1e40af,stroke-width:2px,color:#fff
-    style C fill:#f97316,stroke:#ea580c,stroke-width:2px,color:#fff
-    style D fill:#22c55e,stroke:#16a34a,stroke-width:2px,color:#fff
-    style E fill:#a855f7,stroke:#7c3aed,stroke-width:2px,color:#fff
-    style F fill:#eab308,stroke:#ca8a04,stroke-width:2px,color:#fff
-        `}
-      />
-
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-3">
         <ExplanationCard
-          title="Request to Quote"
-          description="Pre-filled request from GHL becomes quote in Jobber."
+          title="Pre-filled Request → Client Quote"
+          description="A pre-filled request from GHL becomes a Jobber quote that can be shared with the client."
           accent="orange"
           icon={FileText}
           responsibilities={[
-            "Sales sends request to Jobber with one action",
-            "Jobber converts to quote and sends link to customer",
-            "Customer approves via email or SMS",
+            "GHL sends customer and job details to Jobber in a single action",
+            "Jobber creates a structured quote with line items and pricing",
+            "Quote link is sent to the client via email/SMS from Jobber",
           ]}
         />
 
         <ExplanationCard
-          title="Job Execution"
-          description="Approved quotes become scheduled jobs."
+          title="Approval → Technician Assignment"
+          description="Client-approved quotes turn into scheduled jobs with clear technician ownership."
           accent="green"
           icon={Calendar}
           responsibilities={[
-            "Schedule approved work and assign technicians",
-            "Track job progress in Jobber mobile app",
-            "Manage invoicing and payments",
+            "Client approves the quote online",
+            "Quote converts to a job with date, time, and location",
+            "Dispatcher assigns the right technician in Jobber's schedule",
           ]}
         />
 
         <ExplanationCard
-          title="Bidirectional Sync"
-          description="All key events sync back to GHL automatically."
+          title="Track Stages & Sync to GHL"
+          description="Jobber tracks each stage and syncs key updates back to GHL."
           accent="blue"
           icon={RefreshCw}
           responsibilities={[
-            "Quote issued/approved updates GHL pipeline",
-            "Job scheduled/completed syncs to GHL",
-            "Invoice created/paid updates opportunity status",
+            "Job status moves from quoted → scheduled → in progress → completed → invoiced",
+            "Status and invoice outcomes sync to the matching opportunity in GHL",
+            "Sales always sees an accurate view of each job's progress",
           ]}
         />
       </div>
