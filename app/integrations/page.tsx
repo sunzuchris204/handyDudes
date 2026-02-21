@@ -91,14 +91,14 @@ export default function NodeQuoteEnginePage() {
         <ExplanationCard
           title="Data Bridge"
           description="The engine transforms lead information from GoHighLevel into the structured format Jobber needs. It ensures all customer details, service requirements, and notes are accurately transferred, eliminating manual data entry and reducing errors."
-          accent="cyan"
+          accent="purple"
           icon={ArrowRight}
         />
 
         <ExplanationCard
           title="Quote History & Analytics"
           description="All quotes are stored in a dedicated database, creating a comprehensive record of pricing decisions. This historical data helps identify patterns, improve future quotes, and provides valuable insights for business decisions."
-          accent="blue"
+          accent="green"
           icon={Database}
         />
 
