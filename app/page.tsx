@@ -1,22 +1,18 @@
-import { SystemFlowDiagram } from "@/components/system-flow-diagram";
 import { ExplanationCard } from "@/components/explanation-card";
-import { MessageSquare, Zap, Calendar, Link2 } from "lucide-react";
+import { MessageSquare, Zap, Calendar } from "lucide-react";
 
 export default function OverviewPage() {
-
   return (
     <div className="space-y-8">
       <div className="border-b border-border pb-6">
-        
-        <h1 className="mb-4 text-4xl font-bold text-foreground">Overview</h1>
-        <p className="text-lg leading-relaxed text-muted-foreground">
-          A lead-to-job automation platform for Handy Dudes that connects website chat widgets, GoHighLevel CRM, and Jobber field service management. The system automates the complete customer journey from initial lead contact through quote generation, job scheduling, technician assignment, with seamless data synchronization between all platforms.
-        </p>
-        <br/>
         <div className="mb-4 flex items-center justify-between text-xs uppercase tracking-wider text-muted-foreground">
           <span>Prepared by <span className="font-semibold text-foreground">Ark Innovations</span></span>
           <span>Prepared for <span className="font-semibold text-foreground">Handy Dudes</span></span>
         </div>
+        <h1 className="mb-4 text-4xl font-bold text-foreground">Overview</h1>
+        <p className="text-lg leading-relaxed text-muted-foreground">
+          A lead-to-job automation platform for Handy Dudes that connects website chat widgets, GoHighLevel CRM, and Jobber field service management. The system automates the complete customer journey from initial lead contact through quote generation, job scheduling, technician assignment, and payment processing — with seamless data synchronization between all platforms.
+        </p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-2">

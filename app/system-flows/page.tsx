@@ -4,36 +4,44 @@ import { ArrowRight, FileText, Briefcase } from "lucide-react";
 import { SystemFlowDiagram } from "@/components/system-flow-diagram";
 
 export default function SystemFlowsPage() {
-  const workflows = [
+  const workflows: Array<{
+    title: string;
+    steps: Array<{
+      entity: "lead" | "ghl" | "node" | "jobber" | "technician";
+      step: number;
+      title: string;
+      description: string;
+    }>;
+  }> = [
     {
       title: "1. LEAD TO QUOTE",
       steps: [
         {
-          entity: "lead",
+          entity: "lead" as const,
           step: 1,
           title: "Customer contacts",
           description: "Chat, Thumbtack, or phone.",
         },
         {
-          entity: "ghl",
+          entity: "ghl" as const,
           step: 2,
           title: "GHL captures & qualifies",
           description: "Sales collects details in pipeline.",
         },
         {
-          entity: "node",
+          entity: "node" as const,
           step: 3,
           title: "AI generates quotes",
           description: "Multiple options from notes.",
         },
         {
-          entity: "ghl",
+          entity: "ghl" as const,
           step: 4,
           title: "Sales sends to Jobber",
           description: "Selected quote becomes request.",
         },
         {
-          entity: "jobber",
+          entity: "jobber" as const,
           step: 5,
           title: "Client approves",
           description: "Quote sent via email/SMS.",
@@ -44,25 +52,25 @@ export default function SystemFlowsPage() {
       title: "2. JOB TO COMPLETION",
       steps: [
         {
-          entity: "jobber",
+          entity: "jobber" as const,
           step: 1,
           title: "Job scheduled",
           description: "Technician assigned.",
         },
         {
-          entity: "technician",
+          entity: "technician" as const,
           step: 2,
           title: "Work completed",
           description: "Status updated in Jobber.",
         },
         {
-          entity: "jobber",
+          entity: "jobber" as const,
           step: 3,
           title: "Invoice sent",
           description: "Payment processed.",
         },
         {
-          entity: "ghl",
+          entity: "ghl" as const,
           step: 4,
           title: "Survey & sync",
           description: "Status syncs. Survey sent.",

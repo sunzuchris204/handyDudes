@@ -66,7 +66,7 @@ export function SystemFlowDiagram({ workflows }: SystemFlowDiagramProps) {
       {workflows.map((workflow, workflowIndex) => (
         <div key={workflowIndex} className="space-y-4">
           <h3 className="text-xl font-bold text-foreground">{workflow.title}</h3>
-          
+
           {/* Horizontal Flow */}
           <div className="flex flex-wrap items-start gap-4 overflow-x-auto pb-4">
             {workflow.steps.map((step, stepIndex) => (
