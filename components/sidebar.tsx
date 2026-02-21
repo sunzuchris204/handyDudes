@@ -5,13 +5,12 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
 const navigationItems = [
-  { href: "/", label: "Overview" },
+  { href: "/", label: "Proposal Overview" },
   { href: "/system-flows", label: "System Flows" },
   { href: "/sales-dashboard", label: "Sales Dashboard" },
   { href: "/jobber-integration", label: "Jobber Integration" },
   { href: "/technician-workflow", label: "Technician Workflow" },
-  { href: "/integrations", label: "Integrations" },
-  { href: "/key-decisions", label: "Key Decisions" },
+  { href: "/integrations", label: "Node Quote Engine" },
 ];
 
 interface SidebarProps {
