@@ -8,7 +8,10 @@ export default function OverviewPage() {
         
         <h1 className="mb-4 text-4xl font-bold text-foreground">Overview</h1>
         <p className="text-lg leading-relaxed text-muted-foreground">
-          A lead-to-job automation platform for Handy Dudes that connects website chat widgets, GoHighLevel CRM, and Jobber field service management. The system automates the complete customer journey from initial lead contact through quote generation, job scheduling, technician assignment, and payment processing — with seamless data synchronization between all platforms.
+        Sales Quoting & Dispatch System for Handy Dudes that centralizes leads from multiple sources into a single workspace, enabling the sales manager to track every lead from intake to close.
+        <br />
+        <br />
+        The system is composed of three major parts. First, GoHighLevel serves as the central hub where all leads land and where automations handle key follow-ups and task management to simplify the sales manager’s workflow. Second, the Node Quote Engine acts as the quote database and AI-assisted recommendation service, storing all generated quotes and helping the sales manager make informed, explainable pricing decisions. Lastly, Jobber is used by technicians and clients to receive approved quotes and manage job execution.
         </p>
         <br />
         <div className="mb-4 flex items-center justify-between text-xs uppercase tracking-wider text-muted-foreground">
@@ -34,7 +37,7 @@ export default function OverviewPage() {
 
         <ExplanationCard
           title="Node Quote Engine"
-          description="The Node Quote Engine acts as an intelligent bridge between GoHighLevel and Jobber, generating AI-powered quote options from lead notes and conversation history. It stores all quote history in a dedicated database, creating a comprehensive record of pricing decisions. This enables the system to detect mismatches between sales quotes and technician quotes, helping maintain consistency and accuracy across the entire quoting process."
+          description="The Node Quote Engine is the intelligent bridge between the sales workspace and field operations. It receives lead context from the GoHighLevel opportunity (notes, photos, conversation history), consults a canonical materials & pricing dataset, uses an LLM to suggest three tiered quote options, applies deterministic pricing rules, stores every version, and outputs an editable draft back to the salesperson. It also corrects quotes that are off when technicians submit actuals and creates formal adjustment requests to be reviewed and approved by the salesperson."
           accent="blue"
           icon={MessageSquare}
           className="md:col-span-2"

@@ -227,7 +227,7 @@ export default function SalesDashboardPage() {
             "Triggered by the 'Pull Quotes' action in GHL (shown above)",
             "Produces multiple quote options for sales review",
             "Stores quote history in an external database for analytics",
-            "Compares technician quotes against sales quotes to detect mismatches",
+            "Analyzes technician-submitted actuals against the original sales quote to identify and correct off-quotes before any invoice adjustments are finalized",
             "Helps speed up quoting while keeping final decisions with the salesperson",
           ]}
         />
